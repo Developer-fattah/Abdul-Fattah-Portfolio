@@ -245,11 +245,18 @@ body {
 #skills {
     background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
     padding: 4rem 0;
+   
+      overflow-x: hidden;
   }
-  
+  #skills .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .skill-card {
+    width: 100%;
+    box-sizing: border-box;
     background: #111827;
-    border-radius: 16px;
+    border-radius: 12px;
     transition: all 0.3s ease;
     box-shadow: 0 0 20px rgba(139, 92, 246, 0.15);
     height: 100%;
@@ -287,10 +294,12 @@ body {
   
   /* Responsive spacing fix */
   @media (max-width: 576px) {
-    .skill-card {
-      margin: 0.5rem;
+    #skills .container {
+      padding-right: 20px; /* Increase this if needed */
+      padding-left: 15px;  /* Keep consistent spacing */
     }
   }
+  
       
 /* === Project Section Background === */
 #projects {
